@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Mendoza ♥ </title>
+  </head>
+  <body>
+
+
+
+
+
+
+
+
+
+
+<!-- SECCION INICIO ↓ -->
+
+<section id="inicio" class="inicio">
+
+
+
+
+<!-- INICIO MENÚ ↓ -->
+
+        <nav id="navbar" class="nav-navbar">
+
+          <div class="div-menu">
+            <ul class="ul-menu">
+    
+              <li>
+                <a href="#inicio"> Inicio </a>
+              </li>
+              <li>
+                <a href="#calendario"> Calendario </a>
+              </li>
+              <li>
+                <a id="comprobantes" href="#comprobantes"> Comprobantes </a>
+              </li>
+              <li>
+                <a id="direcciones" href="#direcciones"> Direcciones </a>
+              </li>
+              <li>
+                <a id="fotos" href="#fotos"> Fotos </a>
+              </li>
+    
+            </ul>
+          </div>
+        </nav>
+        
+<!-- FIN MENÚ ↑ -->
+
+
+<!-- INICIO CONTADOR ↓ -->
+
+        <div class="div-contador">
+          <h2 class="contador-titulo" id="countdown-title"></h2>
+          <div class="contador" id="countdown"></div>
+        </div>
+
+<!-- FIN CONTADOR ↑ -->
+
+    </section>
+
+<!-- SECCION INICIO ↑ -->
+
+
+
+
+
+
+
+
+
+<!-- SECCION CALENDARIO ↓ -->
+
+<section id="section-calendario">
+
+  <div class="div-calendario" id="calendario">
+
+     <div class="dia">
+      <h2> Sábado, 29 noviembre</h2>
+      <div class="actividades">
+        <div> Salimos, temprano </div>
+        <div> Paramos a descansar, en Villa Mercedes </div>
+      </div>
+    </div>
+
+    <div class="dia">
+      <h2> Domingo, 30 noviembre </h2>
+      <div class="actividades">
+        <div> Partimos hacia Mendoza </div>
+        <div> Check in en Mendoza! </div>
+      </div>
+    </div>
+
+    <div class="dia">
+      <h2> Lunes, 1 diciembre </h2>
+      <div class="actividades">
+        <div> Día libre! </div>
+        <div> Disfrutar con los pitucos, recorrer </div>
+      </div>
+    </div>
+
+         <div class="dia">
+      <h2> Martes, 2 diciembre </h2>
+      <div class="actividades">
+        <div> Cata de aceites </div>
+        <div> Termas de Cacheuta </div>
+      </div>
+    </div>
+
+    <div class="dia">
+      <h2> Miércoles, 3 diciembre </h2>
+      <div class="actividades">
+        <div> Rafting </div>
+        <div> Recorrer centro </div>
+        <div> Almuerzo </div>
+      </div>
+    </div>
+
+    <div class="dia">
+      <h2> Jueves, 4 diciembre </h2>
+      <div class="actividades">
+        <div> Día libre! </div>
+        <div> Empezar a armar valijas 😭 </div>
+      </div>
+    </div>
+
+         <div class="dia">
+      <h2> Viernes, 5 diciembre </h2>
+      <div class="actividades">
+        <div> Check out Mendoza 11 hs </div>
+        <div> Emprendemos regreso </div>
+        <div> Paramos a dormir en Rufino, Santa Fé </div>
+      </div>
+    </div>
+
+    <div class="dia">
+      <h2> Sábado, 6 diciembre </h2>
+      <div class="actividades">
+        <div> Volvemos a nuestro amado cuchitril</div>
+      </div>
+    </div>
+
+
+  </div>
+  
+
+
+
+
+  <!-- Modal -->
+
+<div id="modal" class="modal">
+  <div class="modal-contenido">
+    <span class="cerrar">&times;</span>
+    <h2 class="modal-titulo" id="modal-titulo">Título del día</h2>
+    <div class="modal-actividades" id="modal-actividades">
+      <!-- Aquí se mostrarán las actividades detalladas -->
+    </div>
+  </div>
+</div>
+
+
+
+
+
+</section>
+
+<!-- SECCION CALENDARIO ↑ -->
+
+
+
+
+
+
+
+
+     <!-- CONFETI -->
+      <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+
+    <!-- JS -->
+     <script type="module" src="src/js/contador.js"></script>
+     <script type="module" src="src/js/calendario.js"></script>
+     <script type="module" src="src/js/modal.js"></script>
+
+
+
+  </body>
+</html>
