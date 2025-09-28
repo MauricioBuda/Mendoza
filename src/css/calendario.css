@@ -11,7 +11,7 @@
   justify-content: center;
   gap: 10px;
   width: 95vw;
-  height: 78vh;
+  height: 78dvh;
   overflow-x: auto;
   padding: 10px;
   border-radius: 10px;
@@ -131,7 +131,7 @@
     grid-template-columns: repeat(4, 1fr); /* 4 columnas */
     grid-template-rows: repeat(2, auto);   /* 2 filas */
     gap: 10px;
-    height: 86vh;
+    height: 86dvh;
     overflow: visible; /* sin scroll */
   }
 
