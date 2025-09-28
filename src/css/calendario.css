@@ -115,3 +115,33 @@
   font-weight: bold;
   cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
+   @media screen and (max-width: 524px) {
+
+.div-calendario {
+    display: grid; /* usamos grid en lugar de flex */
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    grid-template-rows: repeat(2, auto);   /* 2 filas */
+    gap: 10px;
+    height: auto; /* que crezca según contenido */
+    overflow: visible; /* sin scroll */
+  }
+
+  .dia {
+    width: auto; /* que ocupe su celda completa */
+    font-size: 14px;
+  }
+
+  .actividades div {
+    font-size: 3vw; /* ajustamos el texto */
+  }
+
+   }

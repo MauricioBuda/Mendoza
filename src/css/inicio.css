@@ -45,8 +45,15 @@
 
    @media screen and (max-width: 524px) {
 
+    .nav-navbar{
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    height:10vh;
+  }
+
   .ul-menu li a {
-    font-size: 3.4vw;
+    font-size: 3.5vw;
   }
 
    }

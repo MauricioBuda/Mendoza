@@ -29,11 +29,12 @@
     .div-contador{
     height: 60vw;
     width: 60vw;
-    font-size: 5vw;
+    font-size: 6vw;
   }
 
     .contador {
-    font-size: 3.5vw;
+    font-size: 4.5vw;
+    /* font-weight:bolder; */
   }
 
    }
