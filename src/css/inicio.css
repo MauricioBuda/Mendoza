@@ -20,9 +20,6 @@
     background-color: rgba(0, 0, 0, 0.491);
   }
   
-  .logo-menu{
-    width: 9vw;
-  }
   
   .ul-menu{
     display: flex;
@@ -30,7 +27,6 @@
   }
   
   .ul-menu li a {
-    /* color: #f5b75a; */
     color: white;
     font-size: 1.5vw;
   }
@@ -38,3 +34,19 @@
   .ul-menu li a:hover {
     border-bottom: 2px solid #f2a739;
   }
+
+
+
+
+
+
+
+
+
+   @media screen and (max-width: 524px) {
+
+  .ul-menu li a {
+    font-size: 3.4vw;
+  }
+
+   }
