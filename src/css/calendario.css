@@ -131,14 +131,20 @@
     grid-template-columns: repeat(4, 1fr); /* 4 columnas */
     grid-template-rows: repeat(2, auto);   /* 2 filas */
     gap: 10px;
-    height: auto; /* que crezca según contenido */
+    height: 86vh;
     overflow: visible; /* sin scroll */
   }
 
   .dia {
-    width: auto; /* que ocupe su celda completa */
+    width: 22vw; 
+    height: 40vh; /* altura fija para cada día */
     font-size: 14px;
   }
+
+.dia h2 {
+  font-size: 2.5vw;
+  padding: 5px 0;
+}
 
   .actividades div {
     font-size: 3vw; /* ajustamos el texto */
