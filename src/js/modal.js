@@ -26,7 +26,7 @@ const detallesDias = {
   ],
   "Lunes, 1 diciembre": [
     "Día libre!",
-    "Recorrer la ciudad",
+    "Recorrer pueblito!",
     "Disfrutar con niños",
   ],
   "Martes, 2 diciembre": [
@@ -114,11 +114,11 @@ dia.addEventListener('click', () => {
 // CONFETI
 
 function lanzarConfeti() {
-  const duration = 5 * 1000; // Duración total en ms
+  const duration = 6 * 1000; // Duración total en ms
   const animationEnd = Date.now() + duration;
   const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 2000 };
 
-  const colors = ['#ff0a54', '#ff477e', '#ff85a1', '#fbb1b1', '#c9184a', '#ffc6ff', '#ffe066', '#00b4d8', '#90e0ef'];
+  const colors = ['#ff0a54', '#5647ffff', '#FF1493', '#ffffffff', '#99FF99', '#000000ff', '#ffe066', '#00b4d8', '#f6ff00ff'];
 
   const interval = setInterval(function() {
     const timeLeft = animationEnd - Date.now();
@@ -133,7 +133,7 @@ function lanzarConfeti() {
     confetti(Object.assign({}, defaults, {
       particleCount,
       colors,
-      origin: { x: Math.random(), y: Math.random() * 0.6 } // empieza desde arriba hasta 60% del alto
+      origin: { x: Math.random(), y: Math.random() * 0.9 } // empieza desde arriba hasta 60% del alto
     }));
   }, 250);
 }

@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(./../../public/img/Paisaje-montañas.jpg);
 }
 
 .div-calendario {
@@ -9,28 +10,26 @@
   margin: 2vh auto;
   justify-content: center;
   gap: 10px;
-  width: 90vw;
+  width: 95vw;
   height: 78vh;
   overflow-x: auto;
   padding: 10px;
-  border: 2px solid #333;
   border-radius: 10px;
-  background: #fff;
 }
 
 .dia {
-  /* flex: 0 0 160px; */
+  width: 18vw;
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 10px;
-  background-color: #e6f7ff;
+  background-color: #e6f7ffa9;
   display: flex;
   flex-direction: column;
 }
 
 .dia h2 {
-    color: white;
-  background-color: #33333398;
+  color: white;
+  background-color: #3333335e;
   border-radius: 5px;
   font-size: 16px;
   margin: 0 0 10px 0;
@@ -52,6 +51,7 @@
     background-color: rgba(1, 33, 93, 0.274);
     border-radius: 5px;
     padding: 6px;
+    text-align: center;
 }
 
 
@@ -74,21 +74,21 @@
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0, 0, 0, 0.494);
   justify-content: center;
   align-items: center;
 }
 
 /* Contenido del modal */
 .modal-titulo {
-    margin-bottom: 10vh;
+    margin-bottom: 2vh;
 }
 .modal-contenido {
    display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #fefefe;
+  background-color: #fefefec1;
   padding: 20px;
   border-radius: 10px;
   width: 80%;
@@ -101,6 +101,9 @@
 .modal-actividades div {
   text-align: center;
   margin-top: 4vh;
+  background-color: rgba(255, 255, 255, 0.581);
+  padding: 1vh 1vw;
+  border-radius: 10px;
 }
 
 /* Botón cerrar */
