@@ -1,29 +1,30 @@
 function startCountdown() {
-  // Fecha objetivo: sábado 28 de noviembre de 2025 a las 00:00:00
   const targetDate = new Date("2025-11-28T00:00:00");
+  const originalTitle = "Mendoza 2025 ♥"; // título original
 
-  const interval = setInterval(() => {
+  const updateCountdown = () => {
     const now = new Date().getTime();
     const timeRemaining = targetDate.getTime() - now;
 
     if (timeRemaining <= 0) {
-      clearInterval(interval);
-      document.getElementById("countdown").innerText = "¡Nos fuimooooo";
+      document.getElementById("countdown").innerText = "¡Nos fuimooooo!";
       document.getElementById("countdown-title").innerText = "";
+      document.title = "¡Nos fuimooooo!";
       return;
     }
 
-    // Calcular días, horas, minutos, segundos
     const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
     const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
-    // Mostrar en el HTML
+    const countdownText = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+    // Actualizar el HTML
     document.getElementById("countdown").innerHTML =
       `${days} días ${hours} hs ${minutes} m ${seconds} s`;
 
-    // Cambiar el título según el tiempo restante
+    // Actualizar título según el tiempo restante
     const titleEl = document.getElementById("countdown-title");
 
     if (days <= 3) {
@@ -33,10 +34,32 @@ function startCountdown() {
     } else if (days <= 30) {
       titleEl.innerText = "Menos de un mes!!";
     } else {
-      titleEl.innerText = "Paciencia ♥"; // sin título si falta más de 2 semanas
+      titleEl.innerText = "Paciencia ♥";
     }
-  }, 1000);
+
+    // Si la pestaña está inactiva, mostrar contador en el título
+    if (document.hidden) {
+      document.title = countdownText;
+    } else {
+      document.title = originalTitle;
+    }
+  };
+
+  // Actualizar cada segundo
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+
+  // Detectar cambios de visibilidad
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) {
+      // Al salir de la pestaña, mostrar el contador
+      // Se actualiza cada segundo de todas formas
+    } else {
+      // Al volver, restaurar el título original
+      document.title = originalTitle;
+    }
+  });
 }
 
-// Iniciar automáticamente
+// Iniciar
 startCountdown();
