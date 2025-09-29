@@ -1,12 +1,10 @@
 .section-comprobantes {
   width: 100vw;
   height: 100vh;
-  background-image: url('./../../public/img/Reina.jpg'), 
-                    url('./../../public/img/ReinaHarry.jpg'),
-                    url('./../../public/img/Harry.jpg');
+  background-image: url('./../../public/img/Cielo.jpeg');
   background-position: left center, center center, right center;
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-size:20% 100%, 60% 100%, 20% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
@@ -24,10 +22,10 @@
   height: 100vh;
 
   /* La primera (ReinaHarry) va al frente, la segunda (Cielo) al fondo */
-  background-image: url('./../../public/img/ReinaHarry.jpg'), url('./../../public/img/Cielo.jpeg');
-  background-repeat: no-repeat, no-repeat;
-  background-position: center center, center center;
-  background-size: contain, cover; /* La primera mantiene proporciones, la segunda ocupa todo */
+  background-image: url('./../../public/img/Cielo.jpeg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; /* La primera mantiene proporciones, la segunda ocupa todo */
 }
 
 

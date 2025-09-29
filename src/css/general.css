@@ -16,7 +16,9 @@ html {
   }
   
   a{
+    display: flex;
     text-decoration: none;
+    text-align: center;
   }
   
   ul{
