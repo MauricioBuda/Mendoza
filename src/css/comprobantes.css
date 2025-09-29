@@ -61,18 +61,26 @@
 .div-comprobantes {
     grid-template-columns: repeat(1, 1fr); 
     grid-template-rows: repeat(1, auto); 
-    padding-top: 14vh;
+    padding-top: 11vh;
     gap: 5vw;
 }
 
 .card {
-    height: 18vh;
+    height: 12vh;
     justify-content: center;
 }
 
 .card h2, .card a {
-    font-size: 4vw;
+    font-size: 3.5vw;
     margin-bottom: 1vh;
+}
+
+.detalle-card div ,
+.detalle-card a {
+    margin: 0 auto 1vw auto;
+    width: 60%;
+    padding: 1px;
+    font-size: 3vw;
 }
 
 
