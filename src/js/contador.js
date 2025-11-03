@@ -31,6 +31,8 @@ function startCountdown() {
       titleEl.innerText = "Ya nos vamos pitucaa!!";
     } else if (days <= 14) {
       titleEl.innerText = "Menos de dos semanas pituca!!";
+    } else if (days <= 21) {
+      titleEl.innerText = "Tres semanitas jejeje ♥";
     } else if (days <= 30) {
       titleEl.innerText = "Menos de un mes!!";
     } else {
