@@ -1,5 +1,5 @@
 function startCountdown() {
-  const targetDate = new Date("2025-11-28T00:00:00");
+  const targetDate = new Date("2025-11-29T07:00:00");
   const originalTitle = "Mendoza 2025 ♥"; // título original
 
   const updateCountdown = () => {
