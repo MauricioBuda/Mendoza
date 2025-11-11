@@ -27,8 +27,18 @@ function startCountdown() {
     // Actualizar título según el tiempo restante
     const titleEl = document.getElementById("countdown-title");
 
-    if (days <= 3) {
+    if (days <= 1) {
       titleEl.innerText = "Ya nos vamos pitucaa!!";
+    } else if (days <= 2) {
+      titleEl.innerText = "Menos de dos dias pituca mia!!";
+    } else if (days <= 3) {
+      titleEl.innerText = "Treeees!!";
+    } else if (days <= 4) {
+      titleEl.innerText = "Cuatrooo!!";
+    }else if (days <= 5) {
+      titleEl.innerText = "Cinco diaaaaas!!";
+    }else if (days <= 7) {
+      titleEl.innerText = "Menos de una semana la concha de la gorra!!";
     } else if (days <= 14) {
       titleEl.innerText = "Menos de dos semanas pituca!!";
     } else if (days <= 21) {
